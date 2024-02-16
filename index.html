@@ -19,7 +19,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #111;
+            background-color: rgb(59, 51, 51);
             padding-top: 20px;
         }
 
@@ -27,12 +27,12 @@
             padding: 10px;
             text-decoration: none;
             font-size: 18px;
-            color: white;
+            color: rgb(252, 238, 238);
             display: block;
         }
 
         .sidebar a:hover {
-            background-color: #333;
+            background-color: rgb(100, 87, 87);
         }
 
         /* CSS for content */
@@ -40,32 +40,68 @@
             margin-left: 250px;
             padding: 20px;
         }
+
+        /* CSS for card container */
+        .card-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent line breaks */
+            display: flex; /* Enable flexbox */
+            padding: 20px;
+        }
+
+        /* CSS for individual card */
+        .card {
+            flex: 0 0 auto; /* Prevent flex items from growing */
+            width: 200px; /* Adjust width as needed */
+            height: 150px; /* Adjust height as needed */
+            margin-right: 20px; /* Adjust spacing between cards */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; /* Remove default underline */
+            color: inherit; /* Inherit text color */
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
     </style>
 </head>
 <body>
 
-<!-- Main Banner -->
-<section class="banner">
-    <div class="slider">
-        <img src="bannerPic.jpeg" alt="Banner 1">
-        <img src="img/banner2.jpg" alt="Banner 2">
-        <img src="img/banner3.jpg" alt="Banner 3">
+    <!-- Main Banner -->
+    <section class="banner">
+        <div class="slider">
+            <img src="bannerPic.jpeg" alt="Banner Image" style="max-width: 100%; max-height: 100%;">
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="art.html">Art</a>
+        <a href="background.html">Background</a>
+        <a href="research.html">Research</a>
     </div>
-</section>
 
-<!-- Sidebar -->
-<div class="sidebar">
-    <a href="page1.html">Page 1</a>
-    <a href="page2.html">Page 2</a>
-    <a href="page3.html">Page 3</a>
-</div>
+    <!-- Page content -->
+    <div class="content">
+        <!-- Your content here -->
+        <h1>Welcome to Page 1</h1>
+        <p>This is the content of Page 1.</p>
+    </div>
 
-<!-- Page content -->
-<div class="content">
-    <!-- Your content here -->
-    <h1>Welcome to Page 1</h1>
-    <p>This is the content of Page 1.</p>
-</div>
+    <!-- Card container -->
+    <div class="card-container">
+        <!-- Individual cards as links -->
+        <a href="page1.html" class="card">Card 1</a>
+        <a href="page2.html" class="card">Card 2</a>
+        <a href="page3.html" class="card">Card 3</a>
+        <!-- Add more cards as needed -->
+    </div>
 
 </body>
 </html>
