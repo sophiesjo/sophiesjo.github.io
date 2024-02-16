@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main Page</title>
     
+    <style>
+        /* CSS for sidebar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #333;
+        }
+
+        /* CSS for content */
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>This is Sophie's website, hosted by Github Pages.</p>
+
+<!-- Main Banner -->
+<section class="banner">
+    <div class="slider">
+        <img src="bannerPic.jpeg" alt="Banner 1">
+        <img src="img/banner2.jpg" alt="Banner 2">
+        <img src="img/banner3.jpg" alt="Banner 3">
+    </div>
+</section>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+    <!-- Your content here -->
+    <h1>Welcome to Page 1</h1>
+    <p>This is the content of Page 1.</p>
+</div>
+
 </body>
 </html>
