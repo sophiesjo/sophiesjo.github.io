@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
     <title>Main Page</title>
     
     <style>
@@ -11,7 +12,18 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: rgb(247, 232, 213);
         }
+
+        /* Top nav bar */
+        .topnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: 1.5rem;
+        }
+
+        
 
         .sidebar {
             height: 100%;
@@ -73,19 +85,35 @@
 </head>
 <body>
 
+    <!--Hamburger menu pop over to navigate site-->
+    <header class=""topnav wrapper">
+        <h1>
+            <a href="/">Welcome</a>
+        </h1>
+        <nav>
+            <ul class="topnav_links">
+                <li class="topnav_item"><a href="" class="topnav_link">Art</a></li>
+                <li class="topnav_item"><a href="" class="topnav_link">Background</a></li>
+                <li class="topnav_item"><a href="" class="topnav_link">Research</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
     <!-- Main Banner -->
     <section class="banner">
         <div class="slider">
             <img src="bannerPic.jpeg" alt="Banner Image" style="max-width: 100%; max-height: 100%;">
         </div>
-    </section>
+    </section> 
 
-    <!-- Sidebar -->
+
+    <!-- Sidebar
     <div class="sidebar">
         <a href="art.html">Art</a>
         <a href="background.html">Background</a>
         <a href="research.html">Research</a>
-    </div>
+    </div> -->
 
     <!-- Page content -->
     <div class="content">
