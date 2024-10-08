@@ -4811,7 +4811,7 @@ input, select, textarea {
 		}
 
 			.gallery.style1 a:hover {
-				color: #47D3E5;
+				color: #47d3e58f;
 			}
 
 		.gallery.style1 strong, .gallery.style1 b {
@@ -4859,7 +4859,7 @@ input, select, textarea {
 			.gallery.style1 input[type="button"]:active,
 			.gallery.style1 button:active,
 			.gallery.style1 .button:active {
-				background-color: rgba(71, 211, 229, 0.2);
+				background-color: rgba(71, 211, 229, 0.164);
 				box-shadow: inset 0 0 0 1px #47D3E5;
 				color: #47D3E5 !important;
 			}
@@ -4913,7 +4913,8 @@ input, select, textarea {
 		.gallery.style1 article {
 			overflow: hidden;
 			position: relative;
-			width: 25%;
+			height: 50%;
+			width: auto;
 		}
 
 			.gallery.style1 article .image {
@@ -4928,7 +4929,8 @@ input, select, textarea {
 
 				.gallery.style1 article .image img {
 					display: block;
-					width: 100%;
+					height: 50%;
+					width: auto;
 					border-radius: 0;
 				}
 
@@ -4991,7 +4993,8 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.gallery.style1 article {
-				width: 33.33333%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1 article .caption {
@@ -5003,7 +5006,8 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.gallery.style1 article {
-				width: 50%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1 article .caption {
@@ -5015,7 +5019,8 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.gallery.style1 article {
-				width: 100%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1 article .caption {
@@ -5025,7 +5030,8 @@ input, select, textarea {
 		}
 
 		.gallery.style1.small article {
-			width: 20%;
+			height: 50%;
+					width: auto;
 		}
 
 			.gallery.style1.small article .caption {
@@ -5035,7 +5041,8 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.gallery.style1.small article {
-				width: 25%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1.small article .caption {
@@ -5047,7 +5054,8 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.gallery.style1.small article {
-				width: 33.33333%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1.small article .caption {
@@ -5059,7 +5067,8 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.gallery.style1.small article {
-				width: 50%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1.small article .caption {
@@ -5069,7 +5078,8 @@ input, select, textarea {
 		}
 
 		.gallery.style1.big article {
-			width: 33.33333%;
+			height: 50%;
+					width: auto;
 		}
 
 			.gallery.style1.big article .caption {
@@ -5079,7 +5089,8 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.gallery.style1.big article {
-				width: 50%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1.big article .caption {
@@ -5091,7 +5102,8 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.gallery.style1.big article {
-				width: 50%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1.big article .caption {
@@ -5103,7 +5115,8 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.gallery.style1.big article {
-				width: 100%;
+				height: 50%;
+					width: auto;
 			}
 
 				.gallery.style1.big article .caption {
@@ -5117,7 +5130,7 @@ input, select, textarea {
 	.gallery.style2 {
 		/*background-image: url("../../images/banner.jpg");*/
 		/*background-color: #000000;*/
-		color: #ffffff;
+		color: #fff9f9;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -5260,7 +5273,7 @@ input, select, textarea {
 
 		.gallery.style2 > .forward {
 			right: 0;
-			background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0));
+			/*background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0));*/
 		}
 
 			.gallery.style2 > .forward:before {
@@ -5298,20 +5311,36 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			overflow: hidden;
-			width: 22.5rem;
-			max-width: 75vw;
+			max-width: 600px;
+			min-width: 200px;
+			margin-right: 15px;
+			margin-left: 15px;
+			/*height: 100%;
+			width: auto;
+			max-height: 500px;
+			min-height: 90px;*/
 		}
 
 			.gallery.style2 article .image {
 				display: block;
 				width: 100%;
 				border-radius: 0;
+				/*height: 100%;
+			width: auto;
+			max-height: 500px;
+				border-radius: 30px;
+				min-height: 90px;*/
 			}
 
 				.gallery.style2 article .image img {
 					display: block;
 					width: 100%;
-					border-radius: 0;
+				border-radius: 0;
+					/*height: 100%;
+			width: auto;
+			max-height: 500px;
+					border-radius: 30px;
+					min-height: 90px;*/
 				}
 
 			.gallery.style2 article .caption {
@@ -5370,23 +5399,57 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		@media screen and (max-width: 980px) {
 
+		@media screen and (max-width: 2000px) {
+
+			.gallery.style2 article{
+				width: 33%;
+				height: auto;
+			}
 			.gallery.style2 article .caption {
 				padding: 2rem;
 			}
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/*@media screen and (max-width: 980px) {
 
+			.gallery.style2 article{
+				width: 40%;
+				height: auto;
+			}
+			.gallery.style2 article .caption {
+				padding: 2rem;
+			}
+
+		}*/
+
+		@media screen and (max-width: 780px) {
+
+			.gallery.style2 article{
+				width: 50%;
+				height: auto;
+			}
 			.gallery.style2 article .caption {
 				padding: 2rem;
 			}
 
 		}
 
-		.gallery.style2.small article {
+		/*@media screen and (max-width: 600px) {
+
+			.gallery.style2 article{
+				width: 60%;
+				height: auto;
+			}
+			.gallery.style2 article .caption {
+				padding: 2rem;
+			}
+			
+
+		}
+
+		/*.gallery.style2.small article {
 			width: 17.5rem;
 		}
 
@@ -5394,7 +5457,7 @@ input, select, textarea {
 				padding: 2rem;
 			}
 
-		@media screen and (max-width: 980px) {
+		/*@media screen and (max-width: 980px) {
 
 			.gallery.style2.small article .caption {
 				padding: 2rem;
@@ -5432,7 +5495,7 @@ input, select, textarea {
 				padding: 2rem;
 			}
 
-		}
+		}*/
 
 /* Gallery (lightbox) */
 
@@ -5594,7 +5657,7 @@ input, select, textarea {
 				display: block;
 				max-width: 90vw;
 				max-height: 85vh;
-				box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
+				box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.336);
 			}
 
 		.gallery.lightbox .modal.visible {
@@ -5637,7 +5700,7 @@ input, select, textarea {
 	}
 
 	.gallery article .image {
-		background-color: rgba(0, 0, 0, 0.125);
+		/*background-color: rgba(0, 0, 0, 0.125);*/
 	}
 
 	
